@@ -12,31 +12,28 @@
 <br>
 <br>
 
-C# ile Excel Dosyasına Bağlanma (OleDbConnection ile)
-3 sene önce54 Yorum
-Bu yazımızda OledbConnection kullanarak Excel dosyasına bağlanıp Select (Veri çekme), İnsert (Veri Ekleme), Update (Güncelleme) işlemlerini gerçekleştireceğiz ve Excel dosyasındaki verilerin Datagridview de görüntülenmesini sağlayacağız.
+<h2> Nasıl Yapılır - C# ile Excel Dosyasına Bağlanma (OleDbConnection ile) </h2>
 
 
- 
-Ayrıca C# dilinde yazılmış daha fazla örnek ve konular için C# Dersleri yazısını yada sağ üstte bulunan site içinde arama panelini kullanabilirsiniz.
+ OledbConnection kullanarak Excel dosyasına bağlanıp Select (Veri çekme), İnsert (Veri Ekleme), Update (Güncelleme) işlemlerini gerçekleştireceğiz ve Excel dosyasındaki verilerin Datagridview de görüntülenmesini sağlayacağız.
 
 
-Örneğimizde D sürücüsünde bulunan ve Öğrenci listesi tutan “ogrenci.xlsx” isimli bir excel dosyasına bağlanıp bu işlemleri gerçekleştireceğiz. Excel dosyamızı aşağıdaki şekilde hazırlıyoruz.
+
+Örneğimizde D sürücüsünde bulunan ve data listesi tutan “data.xlsx” isimli bir excel dosyasına bağlanıp bu işlemleri gerçekleştireceğiz. Excel dosyamızı aşağıdaki şekilde hazırlıyoruz.
 
 
 Daha sonra formumuzu aşağıdaki şekilde tasarlayalım.
 
-
+![bandicam 2021-05-18 04-59-22-414](https://user-images.githubusercontent.com/74311713/118579436-c3a0ba00-b796-11eb-86fa-9320cb47cb6e.jpg)
  
-excel_datagrid
+
 
 
  
 Kodlamaya başlayalım. İlk olarak bağlantı sağlayabilmek için;
 
-using System.Data.OleDb;
-1
-using System.Data.OleDb;
+
+<h3> using System.Data.OleDb; </h3>
 ekliyoruz.
 
 Daha sonra verileri Getir butonuna çift tıklayarak excel verilerimizin DataGridView üzerinde görünmesini sağlamak amacıyla aşağıdaki kodları yazıyoruz. OledbConnection bağlantı cümlesinde HDR= YES yaparak ilk satırın sütun başlığı olarak ayarlanmasını sağlıyoruz.
