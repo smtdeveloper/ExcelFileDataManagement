@@ -2,7 +2,7 @@
 
 
 <H1> SMTcoder </H1>
-
+Projeye yıldız Vermeyi Unutmayın 🚀 Teşekkürler! ❤️
 <h3> Ekran görüntüleri </h3>
 
 ![bandicam 2021-05-18 04-59-22-414](https://user-images.githubusercontent.com/74311713/118579436-c3a0ba00-b796-11eb-86fa-9320cb47cb6e.jpg)
